@@ -1,0 +1,70 @@
+:root {
+	--heading: 'UA-brand', system-ui, sans-serif;
+	--body: 'Glametrix', system-ui, sans-serif;
+
+	--main_text_color: #2e261d;
+	--header_black: #2e261d;
+	--header_orange: #c65a32;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: 'UA-brand';
+	src: url('./assets/fonts/ua-BRAND-bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'UA-brand';
+	src: url('./assets/fonts/ua-BRAND-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Glametrix';
+	src: url('./assets/fonts/Glametrix.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Glametrix';
+	src: url('./assets/fonts/GlametrixBold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Han-Zi';
+	src: url('./assets/fonts/Han-Zi_Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: var(--body);
+	font-size: 18px;
+	line-height: 1.45;
+	color: var(--main_text_color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading);
+	font-weight: bold;
+}
