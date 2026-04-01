@@ -5,11 +5,18 @@
 	--main_text_color: #2e261d;
 	--header_black: #2e261d;
 	--header_orange: #c65a32;
+	--text_white: #fff;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 @font-face {
@@ -67,4 +74,25 @@ h5,
 h6 {
 	font-family: var(--heading);
 	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-family: var(--body);
+	color: var(--main_text_color);
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+	font-weight: 300;
+	display: block;
+	width: fit-content;
+}
+
+button {
+	font-family: var(--body);
+}
+
+main {
+	width: 100%;
 }

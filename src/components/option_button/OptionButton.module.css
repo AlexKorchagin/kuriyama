@@ -1,0 +1,108 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 11;
+}
+
+/* КНОПКА */
+.button {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: var(--header_orange);
+	color: white;
+	border: none;
+	z-index: 3;
+	font-size: 22px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.button:hover {
+	filter: brightness(115%);
+}
+
+/* ВНЕШНЕЕ КОЛЬЦО */
+.outerCircle {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 2px solid var(--header_orange);
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.outerCircle_white {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* ВРАЩАЮЩЕЕСЯ КОЛЬЦО */
+.rotatingCircle {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	border: 2px solid transparent;
+	border-top: 2px solid var(--header_orange);
+	border-right: 2px solid var(--header_orange);
+	border-radius: 50%;
+	animation: rotate 6s linear infinite;
+	z-index: 2;
+}
+
+.rotatingCircle_white {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	border: 2px solid transparent;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-radius: 50%;
+	animation: rotate 6s linear infinite;
+	z-index: 2;
+}
+
+/* КРЕСТ (линии через экран) */
+.cross {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+}
+
+.cross span {
+	position: absolute;
+	background: var(--header_orange);
+}
+
+/* горизонтальная */
+.cross span:first-child {
+	width: 100%;
+	height: 1px;
+	top: 50%;
+	left: 0;
+}
+
+/* вертикальная */
+.cross span:last-child {
+	height: 100%;
+	width: 1px;
+	left: 50%;
+	top: 0;
+}
+
+/* АНИМАЦИЯ */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

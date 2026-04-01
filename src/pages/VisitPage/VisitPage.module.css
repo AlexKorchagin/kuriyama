@@ -1,0 +1,395 @@
+.div_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: fit-content;
+	position: relative;
+}
+
+.main_container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 120px;
+	box-sizing: border-box;
+	padding-top: 36px;
+}
+
+/* hero */
+
+.visit_page_container_hero {
+	display: flex;
+	justify-content: space-between;
+	height: 584px;
+	margin-bottom: 100px;
+}
+
+.visit_page_colum_hero {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.visit_page_colum_img_hero {
+	background-image: url('../../assets/images/visit_page_hero_block.png');
+	width: 35%;
+	background-repeat: no-repeat;
+}
+
+.option_container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+}
+
+.visit_desqr {
+	width: 50%;
+}
+
+.more_button {
+	border: 1px solid var(--header_orange);
+	font-size: 22px;
+	padding: 10px 25px;
+	background: none;
+	border-radius: 33px;
+	font-weight: 300;
+	height: 45px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	position: relative;
+}
+
+.more_button:hover {
+	filter: brightness(115%);
+	transform: translateY(-2px);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* about */
+
+.visit_page_container_about {
+	display: flex;
+	justify-content: space-between;
+	height: 900px;
+	position: relative;
+}
+
+.visit_page_colum_about {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	h1 {
+		width: 75%;
+		color: var(--header_orange);
+	}
+}
+
+.visit_page_colum_img_about {
+	width: 40%;
+	background-image: url('../../assets/images/visit_page_about_left.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	z-index: 12;
+}
+
+.about_description_block {
+	width: 90%;
+	display: flex;
+	height: 100%;
+	gap: 20px;
+	margin-top: 120px;
+}
+
+.about_description_block_column {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.about_description_block_img_left {
+	width: 100%;
+	height: 100%;
+	background-image: url('../../assets/images/visit_page_about_block_1.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.about_description_block_img {
+	width: 40%;
+	background-image: url('../../assets/images/visit_page_about_block_2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* plan */
+
+.plan_section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-image: url('images/map/map_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 1100px;
+	position: relative;
+
+	.main_container {
+		height: 100%;
+	}
+}
+
+.plan_section_text_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 850px;
+	background-image: url('images/map/map.png');
+	background-repeat: no-repeat;
+	background-size: 1250px;
+	position: relative;
+	z-index: 1;
+}
+.plan_section_text_row_1 {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.plan_section_text_row_2 {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.map_item {
+	position: absolute;
+}
+.map_item:nth-of-type(2) {
+	top: 250px;
+	left: 200px;
+}
+
+.map_item:nth-of-type(3) {
+	top: 400px;
+	left: 320px;
+}
+
+.map_item:nth-of-type(4) {
+	top: 460px;
+	left: 520px;
+}
+
+.map_item:nth-of-type(5) {
+	top: 400px;
+	left: 720px;
+}
+
+.map_item:nth-of-type(6) {
+	top: 220px;
+	left: 900px;
+}
+
+/* DayPass */
+
+.dayPass_section {
+	margin-top: 100px;
+	h1 {
+		color: var(--header_orange);
+	}
+}
+
+.dayPass_title_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dayPass_title_colum {
+	width: fit-content;
+	h1 {
+		width: fit-content;
+	}
+}
+
+.dayPass_block {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	gap: 55px;
+	h2 {
+		font-size: 30px;
+		font-weight: 700;
+		color: #2e261d;
+		font-family: var(--body);
+	}
+}
+
+.dayPass_block_rock {
+	display: flex;
+	gap: 55px;
+	margin-bottom: 20%;
+}
+
+.dayPass_block_icon {
+	width: 140px !important;
+	z-index: 12;
+}
+
+.dayPass_block_colum {
+	flex-direction: column;
+
+	img {
+		width: 100%;
+	}
+}
+
+.dayPass_block_desqr {
+	p {
+		width: 60%;
+	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* products */
+
+.products_section {
+	height: 700px;
+	margin-top: 100px;
+	position: relative;
+}
+
+.products_text_block {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+.products_img {
+	position: absolute;
+}
+
+.products_img:nth-of-type(1) {
+	left: 20%;
+}
+
+.products_img:nth-of-type(2) {
+	right: 10%;
+}
+
+.products_img:nth-of-type(3) {
+	left: 0%;
+	bottom: 20%;
+}
+.products_img:nth-of-type(4) {
+	right: 35%;
+	bottom: 0%;
+}
+.products_img:nth-of-type(5) {
+	right: 0%;
+	bottom: 20%;
+}
+
+/* daily_pass */
+
+.dailyPass_section {
+	background-image: url('images/daily_pass/daily_pass_bg.png');
+	background-position: 0% 30%;
+	background-size: cover;
+	margin-top: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0px;
+	button {
+		color: var(--body) !important;
+		background-color: #fff !important;
+	}
+}
+.dailyPass_container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.dailyPass_text_block {
+	color: #fff !important;
+	width: 60%;
+	p {
+		color: #fff !important;
+	}
+}
+
+/* Process */
+
+.process {
+	margin-top: 100px;
+	h1 {
+		color: var(--header_orange);
+		grid-column: span 2 / span 2;
+	}
+}
+
+.process_title {
+	font-size: 48px;
+	margin-bottom: 60px;
+	color: var(--header_orange);
+}
+
+.process_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 60px;
+	align-items: start;
+}
+
+.process_step {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.process_step:nth-of-type(1) {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+.process_step:nth-of-type(2) {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+.process_step:nth-of-type(3) {
+	grid-row: span 3 / span 3;
+	grid-column-start: 3;
+	grid-row-start: 1;
+	height: 95%;
+	justify-content: center;
+}
+
+.process_number {
+	font-size: 100px;
+	font-family: 'Han-Zi';
+}
+
+.process_stepBig {
+	padding: 20px;
+	background: url('images/process/wood.png') no-repeat center/cover;
+	border-radius: 8px;
+}
+
+.process_step:not(:last-child) {
+	border-left: 1px solid var(--header_orange);
+	padding-left: 13px;
+}

@@ -1,0 +1,146 @@
+/* Season.module.css */
+
+.section {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	gap: 20px;
+	height: 1100px;
+	h1 {
+		grid-column: span 2 / span 2;
+		grid-row: span 2 / span 2;
+	}
+}
+
+/* заголовок */
+.title {
+	grid-column: 1 / 6;
+}
+
+/* центр */
+.center {
+	grid-row: span 3 / span 3;
+	grid-column-start: 3;
+	grid-row-start: 3;
+	text-align: center;
+	z-index: 2;
+	height: 100%;
+}
+
+/* левый блок */
+.left_top {
+	grid-row-start: 3;
+	align-self: center;
+}
+
+.left_bottom {
+	grid-row-start: 5;
+	grid-column-start: 2;
+	align-self: center;
+}
+
+/* правый блок */
+.right {
+	grid-column-start: 5;
+	grid-row-start: 6;
+}
+
+/* символ */
+.symbol {
+}
+
+/* подписи */
+.sub {
+	font-size: 22px;
+}
+
+.name {
+	color: var(--header_orange);
+	margin-top: 4px;
+	font-size: 32px;
+}
+
+/* кнопка */
+.season_btn {
+	grid-column-start: 3;
+	grid-row-start: 7;
+	margin: 0 auto;
+}
+
+/* картинки */
+.imgLeft {
+	grid-column-start: 1;
+	grid-row-start: 6;
+	margin-top: 40px;
+	width: auto;
+}
+
+.imgRight {
+	grid-column-start: 5;
+	grid-row-start: 3;
+	width: auto;
+}
+
+.imgRight_bg {
+	position: absolute;
+	right: -10%;
+	top: 30%;
+}
+
+.circle {
+	grid-column-start: 4;
+	grid-row-start: 4;
+}
+
+/* декор */
+.bg {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: no-repeat center/contain;
+	z-index: -1;
+}
+
+.flower {
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	width: 120px;
+	height: 120px;
+	background: url('/flower.png') no-repeat center/contain;
+}
+
+.lines {
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	background: url('/lines.png') no-repeat center/contain;
+}
+
+.fadeIn {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.4s ease;
+}
+
+.fadeOut {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all 0.3s ease;
+}
+
+.left_top,
+.left_bottom,
+.center,
+.right,
+.imgLeft,
+.imgRight,
+.circle {
+	transition: all 0.4s ease;
+}

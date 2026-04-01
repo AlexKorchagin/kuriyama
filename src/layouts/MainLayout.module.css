@@ -1,0 +1,19 @@
+.mainLayout {
+	width: 100%;
+	height: fit-content;
+	background-image: url('../../src/assets/images/visit_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 900px;
+	background-position: 0 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main_container {
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 120px;
+	box-sizing: border-box;
+	padding-top: 36px;
+}
